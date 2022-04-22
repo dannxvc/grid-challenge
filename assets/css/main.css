@@ -1,0 +1,22 @@
+html{
+    box-sizing: border-box;
+    background-color: var(--light-grayis-blue);
+    font-size: 13px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+:root{
+    --violet: hsl(263, 55%, 52%);
+    --violet--light: hsl(263, 42%, 64%);
+    --gray:hsl(217, 19%, 35%);
+    --gray2:hsl(219, 29%, 14%);
+    --white:hsl(0, 0%, 100%);
+    --light-grayis-blue: hsl(210, 46%, 95%);
+    --shadow:rgba(0,0,0,0.1);
+}   
