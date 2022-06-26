@@ -59,4 +59,4 @@ I want to know how to improve building with CSS Grid, I am happy with the result
 
 [Danna Vila]
 - Frontend Mentor - [@dannxvc](https://www.frontendmentor.io/profile/dannxvc)
-- Instagram - [@dannxvc](https://www.instagram.com/dannxvc/?igshid=YmMyMTA2M2Y=)
+- Portfolio - [@dannxvc](https://dannavila.pages.dev/)
