@@ -3,7 +3,7 @@
     font-weight: 600;
 }
 .font-500{
-    font-weight: 500;
+    font-weight: 400;
 }
 h2,p{
     margin: 0;
@@ -14,13 +14,20 @@ a{
 }
 .container{
     display: grid;
-    gap: 2.5rem;
-    margin: 6rem 5%;
+    gap: 2.3rem;
+    width: 95%;
+    max-width: 85rem;
+    margin: 12rem auto;
+    letter-spacing: 0.01rem;
 }
 .card{
-    padding: 2.5rem;
+    margin: 0;
+    padding: 1.9rem 2.45rem;
     border-radius: 0.7rem;
     box-shadow: 19px 17px 36px -3px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .card--light{
     color: var(--white);
@@ -29,7 +36,16 @@ a{
     color: var(--gray);
 }
 .card--one{
+    position: relative;
     background: var(--violet) ;
+}
+.card--one:before{
+    content: url(../img/bg-pattern-quotation.svg);
+    opacity: 0.9;
+    position: absolute;
+    top:0;
+    right: 6.5rem;
+    z-index: 0;
 }
 .card--two{
     background: var(--gray) ;
@@ -44,7 +60,6 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 1.5rem;
 }
 .person--name{
     font-size: 1rem;
@@ -69,25 +84,25 @@ a{
     border: 0.15rem solid var(--violet);
 }
 .title{
-    font-size: 1.7rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    z-index: 1;
 }
 .subtitle{
     opacity: 70%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 0;
+    line-height: 1.45rem;
 }
 .attribution{
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 @media (min-width: 59.375rem) { 
     .container{
         grid-template-columns: 1fr 1fr;
-        margin: 6rem 8%;
-        margin-bottom: 4%;
     }
     
     .card--one{
@@ -127,9 +142,7 @@ a{
 @media (min-width: 84.375rem) { 
     .container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        width: 90rem;
-        margin: 8rem auto;
+        grid-template-rows: auto auto;
     }
     .card--one{
         grid-column-end: 3;
